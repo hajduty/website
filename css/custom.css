@@ -1,0 +1,157 @@
+
+@media screen and (max-width: 768px) {
+  .animations-wrapper {
+    position: relative;
+    height: 481px;
+    width: 574px;
+    margin: auto;
+  }
+  .animations-wrapper [data-id="video"]  {
+    bottom: 146px;
+    width: 288px;
+    right: 140px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .animations-wrapper {
+    position: relative;
+    height: 364px;
+    width: 430px;
+    margin: auto;
+  }
+  .animations-wrapper [data-id="video"]  {
+    width: 215px;
+    bottom: 113px;
+    right: 105px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .animations-wrapper {
+    position: relative;
+    height: 480px;
+    width: 574px;
+    margin: auto;
+  }
+  .animations-wrapper [data-id="video"]  {
+    width: 290px;
+    bottom: 147px;
+    right: 139px;
+  }
+}
+
+@media screen and (min-width: 1216px) {
+  .animations-wrapper {
+    position: relative;
+    height: 720px;
+    width: 861px;
+    margin: auto;
+  }
+  .animations-wrapper [data-id="video"] {
+    width: 438px;
+    bottom: 222px;
+    right: 206px;
+  }
+}
+
+.absolute {
+  position: absolute;
+  display: inline-block;
+}
+
+.shape1 {
+  position: absolute;
+  top: 20%;
+  left: 30px;
+  opacity: .4;
+  animation-name: freemove;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+.shape2 {
+  position: absolute;
+  top: 57%;
+  left: 240px;
+  opacity: .1;
+  animation-name: shape2;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+}
+
+.flying {
+  position: absolute;
+  top:50px;
+  left: 1500px;
+  opacity: .1;
+  animation-name: flying;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+}
+.block {
+  position: absolute;
+  top: 120px;
+  width: 90px;
+  left: 600px;
+  opacity: .2;
+  animation-name: freemove;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+}
+@keyframes freemove {
+  25% {
+    transform: rotateY(180deg);
+    margin: 29px 32px 60px 10px;
+  }
+  50% {
+    transform: rotateZ(360deg);
+    margin: 90px -10px -60px -10px;
+  }
+  75% {
+    transform: rotate(180deg);
+    margin: 150px 45px -20px 10px;
+  }
+
+}
+
+@keyframes flying {
+  25% {
+    transform: rotateX(30deg) rotateY(20deg);
+    margin: 20px 10px 20px 40px;
+  }
+  50% {
+    transform: rotateX(15deg) rotateY(40deg);
+    margin: -20px 10px -20px -40px;
+  }
+  75% {
+    transform: rotateY(50deg) rotateX(20deg);
+    margin: 40px 40px;
+  }
+}
+
+@keyframes shape2 {
+  25% {
+    transform: rotateY(360deg);
+  }
+}
+
+@keyframes shape1 {
+  0% {
+    margin: 40px 50px 69px 96px;
+  }
+  50% {
+    margin: -40px -150px -50px 42px;
+  }
+  75% {
+    margin: 80px 20px 532px 123px;
+  }
+  80% {
+    margin: 90px -43px 10px 42px
+  }
+  90% {
+    margin: -20px 120px 320px 25px;
+  }
+  100% {
+  }
+}
